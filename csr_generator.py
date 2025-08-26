@@ -3,7 +3,7 @@
 Certificate Signing Request (CSR) Generator
 A Streamlit web application for generating CSRs and private keys using OpenSSL.
 
-Author: AI Assistant
+Author: Kier Douley the Magnificent
 Date: August 2025
 """
 
@@ -258,8 +258,8 @@ class CSRGenerator:
                 f.write(crt_content)
             
             # Predefined password for PFX export
-            pfx_password = "B4mb00$h0tOfthe$outh!"
-            key_password = "B4mb00$h0tOfthe$outh!"
+            pfx_password = "yourpasswordhere"
+            key_password = "yourpasswordhere"
             
             # OpenSSL command to generate PFX
             if use_password:
@@ -338,7 +338,7 @@ class CSRGenerator:
             - str: Verification output or error message
         """
         try:
-            pfx_password = "B4mb00$h0tOfthe$outh!"
+            pfx_password = "yourpasswordhere"
             cmd = [
                 "openssl", "pkcs12", "-in", pfx_file, "-info", "-noout",
                 "-passin", f"pass:{pfx_password}"
@@ -1214,3 +1214,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
