@@ -1,0 +1,27 @@
+# Certificate Management System - Version 2.0 Dependencies
+
+# Core Web Framework
+streamlit>=1.28.0
+
+# File System Operations (Python 3.4+)
+pathlib2>=2.3.7; python_version<"3.4"
+
+# Built-in modules (included with Python):
+# - subprocess (OpenSSL command execution)
+# - os (operating system interface)
+# - shutil (file operations)
+# - smtplib (email functionality)
+# - logging (application logging)
+# - tempfile (temporary file handling)
+# - email.mime.* (email formatting)
+# - re (regular expressions)
+# - traceback (error handling)
+# - typing (type hints)
+
+# Optional: Enhanced email functionality
+# secure-smtplib>=0.1.1
+
+# Development Dependencies (optional)
+# pytest>=7.0.0
+# black>=22.0.0
+# flake8>=4.0.0
